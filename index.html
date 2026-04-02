@@ -19,7 +19,7 @@ nav a:hover{opacity:1}
 
 .hero{min-height:95vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
 .hero h1{font-size:3.5rem;background:linear-gradient(white,gray);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{margin:25px 0;color:var(--muted);max-width:600px}
+.hero p{margin:25px 0;color:var(--muted);max-width:650px}
 
 .btn{padding:14px 30px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,0.05);transition:.3s}
 .btn:hover{background:#fff;color:#000;transform:translateY(-3px)}
@@ -29,39 +29,24 @@ nav a:hover{opacity:1}
 .card{padding:30px;border-radius:20px;background:var(--card);border:1px solid var(--border);transition:.4s}
 .card:hover{transform:translateY(-10px) scale(1.02)}
 
-/* testimonials */
-.testimonial{font-style:italic}
+/* policies */
+.policy{max-width:800px;margin:20px auto;text-align:left;color:var(--muted)}
 
 /* popup */
-.popup{
-  position:fixed;top:0;left:0;width:100%;height:100%;
-  background:rgba(0,0,0,0.8);
-  display:flex;justify-content:center;align-items:center;
-  visibility:hidden;opacity:0;transition:.3s
-}
+.popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:flex;justify-content:center;align-items:center;visibility:hidden;opacity:0;transition:.3s}
 .popup.active{visibility:visible;opacity:1}
-.popup-box{
-  background:#000;padding:30px;border-radius:20px;border:1px solid var(--border);
-  width:90%;max-width:400px
-}
+.popup-box{background:#000;padding:30px;border-radius:20px;border:1px solid var(--border);width:90%;max-width:400px}
 
 input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1px solid var(--border);background:#000;color:#fff}
 
 /* sticky call */
-.call-btn{
-  position:fixed;bottom:20px;right:20px;
-  padding:15px 20px;border-radius:999px;
-  background:#fff;color:#000;font-weight:bold;
-  box-shadow:0 0 20px rgba(255,255,255,0.3);
-  display:none
-}
-
-@media(max-width:768px){
-  .call-btn{display:block}
-}
+.call-btn{position:fixed;bottom:20px;right:20px;padding:15px 20px;border-radius:999px;background:#fff;color:#000;font-weight:bold;box-shadow:0 0 20px rgba(255,255,255,0.3);display:none}
+@media(max-width:768px){.call-btn{display:block}}
 
 .fade{opacity:0;transform:translateY(40px);transition:1s}
 .fade.show{opacity:1;transform:translateY(0)}
+
+footer{padding:40px;text-align:center;border-top:1px solid var(--border)}
 </style>
 </head>
 
@@ -70,7 +55,6 @@ input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1
 <header>
 <h2>Aura Web Studio</h2>
 <nav>
-<a href="#">Home</a>
 <a href="#services">Services</a>
 <a href="#pricing">Pricing</a>
 <a href="#testimonials">Reviews</a>
@@ -79,35 +63,53 @@ input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1
 </header>
 
 <section class="hero">
-<h1>We Build Websites That Bring You Customers</h1>
-<p>Designed for local businesses who want more calls, more leads, and more money.</p>
+<h1>Websites That Bring Local Businesses More Customers</h1>
+<p>We design high-converting websites for carpet cleaning, detailing, landscaping, and other service businesses so you can get more calls and clients.</p>
 <a class="btn" onclick="openPopup()">Get Free Quote</a>
 </section>
 
 <section id="services" class="section fade">
 <h2>Services</h2>
 <div class="grid">
-<div class="card"><h3>Design</h3><p>Clean modern websites built to convert.</p></div>
-<div class="card"><h3>SEO</h3><p>Show up on Google and get discovered.</p></div>
-<div class="card"><h3>Mobile</h3><p>Optimized for phones where most traffic comes from.</p></div>
+<div class="card"><h3>Website Design</h3><p>Modern, clean websites built to convert visitors into customers.</p></div>
+<div class="card"><h3>SEO Setup</h3><p>We help your business show up on Google and get discovered locally.</p></div>
+<div class="card"><h3>Mobile Optimization</h3><p>Your website will look perfect on phones where most customers come from.</p></div>
 </div>
 </section>
 
 <section id="pricing" class="section fade">
 <h2>Pricing</h2>
 <div class="grid">
-<div class="card"><h3>Starter</h3><p>$149</p></div>
-<div class="card"><h3>Growth</h3><p>$299</p></div>
-<div class="card"><h3>Premium</h3><p>$499</p></div>
+<div class="card"><h3>Starter</h3><p>$149 - 1 Page Website</p></div>
+<div class="card"><h3>Growth</h3><p>$299 - Multi Page + SEO</p></div>
+<div class="card"><h3>Premium</h3><p>$499 - Full Custom Build</p></div>
 </div>
 </section>
 
 <section id="testimonials" class="section fade">
-<h2>What Clients Say</h2>
+<h2>Client Results</h2>
 <div class="grid">
-<div class="card testimonial">“Got 3 new clients in the first week. Worth every dollar.”</div>
-<div class="card testimonial">“My carpet cleaning business finally looks legit online.”</div>
-<div class="card testimonial">“Way better than my old website. I actually get calls now.”</div>
+<div class="card">“Got multiple new clients within the first week. Highly recommend.”</div>
+<div class="card">“My carpet cleaning business finally looks professional online.”</div>
+<div class="card">“Best investment I made for my business.”</div>
+</div>
+</section>
+
+<section id="contact" class="section fade">
+<h2>Contact Us</h2>
+<p>Email: aurawebstudio@gmail.com</p>
+<p>Phone: (470) 123-4567</p>
+<p>Location: Georgia, United States</p>
+</section>
+
+<section class="section fade">
+<h2>Policies</h2>
+<div class="policy">
+<p><strong>Refund Policy:</strong> Due to the nature of digital services, all sales are final. However, we offer revisions to ensure satisfaction. Refunds may be considered before project completion.</p>
+<br>
+<p><strong>Cancellation Policy:</strong> Clients may cancel before work begins for a full refund. Once work has started, partial refunds may apply depending on progress.</p>
+<br>
+<p><strong>Service Terms:</strong> By purchasing our services, you agree to provide necessary information for your project and understand timelines may vary depending on project scope.</p>
 </div>
 </section>
 
@@ -115,7 +117,6 @@ input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1
 <p>© 2026 Aura Web Studio</p>
 </footer>
 
-<!-- popup -->
 <div class="popup" id="popup">
 <div class="popup-box">
 <h3>Free Quote</h3>
@@ -127,8 +128,7 @@ input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1
 </div>
 </div>
 
-<!-- sticky call -->
-<a href="tel:1234567890" class="call-btn">Call Now</a>
+<a href="tel:4701234567" class="call-btn">Call Now</a>
 
 <script>
 (function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
@@ -137,12 +137,10 @@ function sendEmail(){
  from_name:document.getElementById("name").value,
  from_email:document.getElementById("email").value,
  message:document.getElementById("message").value
- }).then(()=>{alert("Sent!")})
+ }).then(()=>{alert("Message sent!")})
 }
-
 function openPopup(){document.getElementById('popup').classList.add('active')}
 function closePopup(){document.getElementById('popup').classList.remove('active')}
-
 const observer=new IntersectionObserver(entries=>{
  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show')}})
 })
